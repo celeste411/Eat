@@ -540,4 +540,4 @@ Several C libraries are used, and their licenses are listed below:
 			from { opacity: 1; scale: 1; }
 			to { opacity: 0; scale: 1.2; }
 		}
-	`;const s=()=>{this.el.addEventListener("animationend",this.el.remove),this.el.style.animation="fadeout 0.5s ease"};return h("div",{id:"app",class:"dark"},initialHasContent?null:h("div",{id:"splash","bind:this":use(this.el)},h(Splash,{"on:next":s})),h("div",{id:"main"},h(Main,null)))},root=document.getElementById("app");try{root.replaceWith(h(App,null)),navigator.serviceWorker.register("/sw.js",{scope:"/"})}catch(s){console.log(s),root.replaceWith(document.createTextNode(`Failed to load: ${s}`))}
+	`;const s=()=>{this.el.addEventListener("animationend",this.el.remove),this.el.style.animation="fadeout 0.5s ease"};return h("div",{id:"app",class:"dark"},initialHasContent?null:h("div",{id:"splash","bind:this":use(this.el)},h(Splash,{"on:next":s})),h("div",{id:"main"},h(Main,null)))},root=document.getElementById("app");try{root.replaceWith(h(App,null)),navigator.serviceWorker.register("/Eat/sw.js",{scope:"/"})}catch(s){console.log(s),root.replaceWith(document.createTextNode(`Failed to load: ${s}`))}
